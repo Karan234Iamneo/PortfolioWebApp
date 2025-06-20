@@ -34,4 +34,10 @@ public class ExperienceController {
     public void delete(@PathVariable Long id) {
         service.deleteById(id);
     }
+
+    @DeleteMapping
+    public void deleteAll() {
+        service.deleteAll();
+    }
+
 }
