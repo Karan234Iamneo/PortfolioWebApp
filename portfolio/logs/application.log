@@ -1353,3 +1353,220 @@
 2025-06-20T11:26:38.274Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-06-20T11:26:38.277Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Started PortfolioApplication in 0.303 seconds (process running for 1402.974)
 2025-06-20T11:26:38.278Z  INFO 15967 --- [portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-20T11:41:02.881Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20T11:41:02.882Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-20T11:41:02.883Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-20T11:42:40.851Z  INFO 15967 --- [portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-06-20T11:42:40.852Z  INFO 15967 --- [portfolio] [Thread-118] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20T11:42:40.852Z  INFO 15967 --- [portfolio] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-20T11:42:40.854Z  INFO 15967 --- [portfolio] [Thread-118] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:42:40.854Z  INFO 15967 --- [portfolio] [Thread-118] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
+2025-06-20T11:42:40.855Z  INFO 15967 --- [portfolio] [Thread-118] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
+2025-06-20T11:42:40.918Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.15 with PID 15967 (/home/coder/project/workspace/portfolio/target/classes started by coder in /home/coder/project/workspace/portfolio)
+2025-06-20T11:42:40.918Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-20T11:42:40.992Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20T11:42:41.000Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 5 JPA repository interfaces.
+2025-06-20T11:42:41.085Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-20T11:42:41.086Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-20T11:42:41.086Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-20T11:42:41.091Z  INFO 15967 --- [portfolio] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-06-20T11:42:41.091Z  INFO 15967 --- [portfolio] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
+2025-06-20T11:42:41.114Z  INFO 15967 --- [portfolio] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20T11:42:41.115Z  INFO 15967 --- [portfolio] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-20T11:42:41.118Z  INFO 15967 --- [portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20T11:42:41.119Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Starting...
+2025-06-20T11:42:41.121Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5912bff5
+2025-06-20T11:42:41.121Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Start completed.
+2025-06-20T11:42:41.121Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20T11:42:41.121Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-20T11:42:41.122Z  INFO 15967 --- [portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-30)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-20T11:42:41.167Z  INFO 15967 --- [portfolio] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20T11:42:41.173Z  INFO 15967 --- [portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:42:41.232Z  WARN 15967 --- [portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-20T11:42:41.302Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-20T11:42:41.308Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-20T11:42:41.311Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Started PortfolioApplication in 0.403 seconds (process running for 2366.008)
+2025-06-20T11:42:41.312Z  INFO 15967 --- [portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-20T11:42:42.705Z  INFO 15967 --- [portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-20T11:42:42.705Z  INFO 15967 --- [portfolio] [Thread-122] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20T11:42:42.706Z  INFO 15967 --- [portfolio] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-20T11:42:42.707Z  INFO 15967 --- [portfolio] [Thread-122] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:42:42.707Z  INFO 15967 --- [portfolio] [Thread-122] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown initiated...
+2025-06-20T11:42:42.708Z  INFO 15967 --- [portfolio] [Thread-122] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown completed.
+2025-06-20T11:42:42.777Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.15 with PID 15967 (/home/coder/project/workspace/portfolio/target/classes started by coder in /home/coder/project/workspace/portfolio)
+2025-06-20T11:42:42.778Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-20T11:42:42.863Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20T11:42:42.870Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2025-06-20T11:42:42.914Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-20T11:42:42.914Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-20T11:42:42.914Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-20T11:42:42.919Z  INFO 15967 --- [portfolio] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-06-20T11:42:42.919Z  INFO 15967 --- [portfolio] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 141 ms
+2025-06-20T11:42:42.935Z  INFO 15967 --- [portfolio] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20T11:42:42.936Z  INFO 15967 --- [portfolio] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-20T11:42:42.939Z  INFO 15967 --- [portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20T11:42:42.940Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Starting...
+2025-06-20T11:42:42.941Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-31 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f966bb6
+2025-06-20T11:42:42.941Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Start completed.
+2025-06-20T11:42:42.942Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20T11:42:42.942Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-20T11:42:42.942Z  INFO 15967 --- [portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-31)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-20T11:42:42.978Z  INFO 15967 --- [portfolio] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20T11:42:42.983Z  INFO 15967 --- [portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:42:43.030Z  WARN 15967 --- [portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-20T11:42:43.074Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-20T11:42:43.079Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-20T11:42:43.082Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Started PortfolioApplication in 0.316 seconds (process running for 2367.779)
+2025-06-20T11:42:43.083Z  INFO 15967 --- [portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-20T11:42:49.489Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20T11:42:49.489Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-20T11:42:49.489Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-20T11:46:25.753Z  INFO 15967 --- [portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-20T11:46:25.755Z  INFO 15967 --- [portfolio] [Thread-126] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20T11:46:25.769Z  INFO 15967 --- [portfolio] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-20T11:46:25.773Z  INFO 15967 --- [portfolio] [Thread-126] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:46:25.773Z  INFO 15967 --- [portfolio] [Thread-126] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown initiated...
+2025-06-20T11:46:25.774Z  INFO 15967 --- [portfolio] [Thread-126] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown completed.
+2025-06-20T11:46:25.889Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.15 with PID 15967 (/home/coder/project/workspace/portfolio/target/classes started by coder in /home/coder/project/workspace/portfolio)
+2025-06-20T11:46:25.890Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-20T11:46:26.006Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20T11:46:26.015Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 5 JPA repository interfaces.
+2025-06-20T11:46:26.060Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-20T11:46:26.060Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-20T11:46:26.060Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-20T11:46:26.065Z  INFO 15967 --- [portfolio] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-06-20T11:46:26.065Z  INFO 15967 --- [portfolio] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 174 ms
+2025-06-20T11:46:26.089Z  INFO 15967 --- [portfolio] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20T11:46:26.091Z  INFO 15967 --- [portfolio] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-20T11:46:26.095Z  INFO 15967 --- [portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20T11:46:26.096Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Starting...
+2025-06-20T11:46:26.098Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-32 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ecf9114
+2025-06-20T11:46:26.098Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Start completed.
+2025-06-20T11:46:26.098Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20T11:46:26.098Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-20T11:46:26.099Z  INFO 15967 --- [portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-32)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-20T11:46:26.135Z  INFO 15967 --- [portfolio] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20T11:46:26.140Z  INFO 15967 --- [portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:46:26.204Z  WARN 15967 --- [portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-20T11:46:26.212Z  WARN 15967 --- [portfolio] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'welcomePageHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping]: Factory method 'welcomePageHandlerMapping' threw exception with message: Unresolved compilation problem: 
+	Syntax error on token ",", Expression expected after this token
+
+2025-06-20T11:46:26.212Z  INFO 15967 --- [portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:46:26.212Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown initiated...
+2025-06-20T11:46:26.233Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown completed.
+2025-06-20T11:46:26.234Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-06-20T11:46:26.241Z  INFO 15967 --- [portfolio] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-20T11:46:26.243Z ERROR 15967 --- [portfolio] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'welcomePageHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping]: Factory method 'welcomePageHandlerMapping' threw exception with message: Unresolved compilation problem: 
+	Syntax error on token ",", Expression expected after this token
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at com.example.portfolio.PortfolioApplication.main(PortfolioApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping]: Factory method 'welcomePageHandlerMapping' threw exception with message: Unresolved compilation problem: 
+	Syntax error on token ",", Expression expected after this token
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 26 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token ",", Expression expected after this token
+
+	at com.example.portfolio.config.WebConfig.addCorsMappings(WebConfig.java:13) ~[classes/:na]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addCorsMappings(WebMvcConfigurerComposite.java:103) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addCorsMappings(DelegatingWebMvcConfiguration.java:94) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getCorsConfigurations(WebMvcConfigurationSupport.java:1180) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.createWelcomePageHandlerMapping(WebMvcAutoConfiguration.java:446) ~[spring-boot-autoconfigure-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.welcomePageHandlerMapping(WebMvcAutoConfiguration.java:425) ~[spring-boot-autoconfigure-3.5.4-SNAPSHOT.jar:3.5.4-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 29 common frames omitted
+
+2025-06-20T11:46:27.662Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.15 with PID 15967 (/home/coder/project/workspace/portfolio/target/classes started by coder in /home/coder/project/workspace/portfolio)
+2025-06-20T11:46:27.662Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-20T11:46:27.729Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20T11:46:27.734Z  INFO 15967 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2025-06-20T11:46:27.773Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-20T11:46:27.774Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-20T11:46:27.774Z  INFO 15967 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-20T11:46:27.779Z  INFO 15967 --- [portfolio] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-06-20T11:46:27.779Z  INFO 15967 --- [portfolio] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-06-20T11:46:27.796Z  INFO 15967 --- [portfolio] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20T11:46:27.797Z  INFO 15967 --- [portfolio] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-20T11:46:27.805Z  INFO 15967 --- [portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20T11:46:27.805Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Starting...
+2025-06-20T11:46:27.807Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-33 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55606528
+2025-06-20T11:46:27.807Z  INFO 15967 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Start completed.
+2025-06-20T11:46:27.807Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20T11:46:27.807Z  WARN 15967 --- [portfolio] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-20T11:46:27.808Z  INFO 15967 --- [portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-33)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-20T11:46:27.837Z  INFO 15967 --- [portfolio] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20T11:46:27.842Z  INFO 15967 --- [portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T11:46:27.889Z  WARN 15967 --- [portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-20T11:46:27.934Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-20T11:46:27.939Z  INFO 15967 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-20T11:46:27.942Z  INFO 15967 --- [portfolio] [restartedMain] c.e.portfolio.PortfolioApplication       : Started PortfolioApplication in 0.288 seconds (process running for 2592.639)
+2025-06-20T11:46:27.943Z  INFO 15967 --- [portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-20T11:46:30.164Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20T11:46:30.164Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-20T11:46:30.165Z  INFO 15967 --- [portfolio] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
